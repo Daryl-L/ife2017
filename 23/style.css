@@ -1,0 +1,106 @@
+input {
+  display: none;
+}
+
+.spiritRadio+label {
+  padding-left: 20px;
+  background: url(1.png) no-repeat;
+  background-position: left center;
+}
+
+.spiritRadio:checked+label {
+  background: url(2.png) no-repeat;
+  background-position: left center;
+}
+
+.spiritCheckbox+label {
+  padding-left: 20px;
+  background: url(3.png) no-repeat;
+  background-position: left center;
+}
+
+.spiritCheckbox:checked+label {
+  background: url(4.png) no-repeat;
+  background-position: left center;
+}
+
+.presidu {
+  position: relative;
+  height: 20px;
+}
+
+.presiduRadio+label {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #d8d8d8;
+  border-radius: 15px;
+  width: 14px;
+  height: 14px;
+  top: 2px;
+}
+
+.presiduRadio+label::after {
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+}
+
+#s+label::after {
+  content: '我是s';
+}
+
+#m+label::after {
+  content: '我是m';
+}
+
+.presiduRadio:checked+label {
+  border-color: #d63e33;
+}
+
+.presiduRadio:checked+label::before {
+  content: '';
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+  background: #d63e33;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.presiduCheckbox+label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d8d8d8;
+}
+
+.presiduCheckbox+label::after {
+  content: '记住身份';
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  width: 4em;
+  top: -2px;
+}
+
+.presiduCheckbox:checked+label {
+  border-color: #d63e33;
+}
+
+.presiduCheckbox:checked+label::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  border: solid #d63e33;
+  border-width: 0 2px 2px 0;
+  width: 3px;
+  height: 5px;
+  transform: rotate(45deg);
+  display: inline-block;
+}
